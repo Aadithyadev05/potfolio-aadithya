@@ -1,0 +1,114 @@
+h1 {
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #fff, #ffffff43);
+    -webkit-background-clip: text;
+    color: transparent;
+ }
+ h1:hover{
+   animation: rotate 1s infinite ease-in-out;
+ }
+ body {
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: lowercase;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ li:nth-child(even){
+   background-color: aqua;
+ }
+ li:nth-child(odd) {
+   background-color: blue;
+ }
+ h2{
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+ }
+ #logo {
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.1s ease-in-out;
+    animation: rotate 5s infinite ease-in-out;
+ }
+ @keyframes rotate {
+   0%{
+      transform:  scale(1) skewX(0deg);
+   }
+   50%{
+      transform:  scale(1.5) skewX(-10deg);
+   }
+   100%{
+      transform:  scale(1);
+   }
+ }
+ #logo:hover{
+   border-radius: 50%;
+   opacity: 0.5;
+ }
+ #TinkXtink {
+   width: fit-content;
+   height: fit-content;
+   border: gray 0.5px solid;
+   padding: 2rem;
+   padding-top: 80px;
+   overflow: hidden;
+   display: flex;
+   gap: 2rem;
+   flex-direction: column;
+   overflow: hidden;
+   align-items: center;
+   justify-content: end;
+   box-shadow: white 0px 0px 100px 10px;
+ }
+ .tinkerhandle{
+   font-weight: 900;
+   color: rgba(240, 248, 255, 0.27);
+ }
+ .name{
+   font-weight: 900;
+   font-size: 1.5rem;
+   color: white;
+ }
+*{
+   margin: 0;
+   padding: 0;
+}
+#userdetails{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+#userdetails p{
+   font-weight: 500;
+   text-transform: uppercase;
+}
+#portfolioContents img{
+    width: 500px;
+   height: auto;
+   margin-top: 10px;
+}
+#portfolioContents{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+   #TinkXtink {
+      width: 50%;
+   }
+   #portfolioContents img{
+      width: 100%;
+   }
+}
